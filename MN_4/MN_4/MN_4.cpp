@@ -6,6 +6,7 @@ int main()
 	//lalalalala
 	//karol
 	//zmien to
+	//cokolwiek
 
 
 	return 0;
