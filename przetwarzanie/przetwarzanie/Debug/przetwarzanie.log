@@ -1,0 +1,81 @@
+﻿Build started 2015-03-18 21:23:39.
+     1>Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\przetwarzanie\przetwarzanie\przetwarzanie.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt przetwarzanie.c
+         przetwarzanie.c
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(28): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(32): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(37): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(39): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(46): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(51): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(55): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(57): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(61): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(64): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(73): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(93): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(99): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(103): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(114): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(136): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(138): warning C4133: '==' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(140): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(141): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(145): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(146): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(150): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(151): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(159): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(172): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(177): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(182): warning C4133: '=' : incompatible types - from 'lista *' to 'lista *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(193): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(194): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(196): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(198): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(199): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(201): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(206): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(207): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(209): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(211): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(212): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(214): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(218): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(219): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(223): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(224): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(225): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(226): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(227): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(228): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(231): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(233): warning C4047: '==' : 'int' differs in levels of indirection from 'void *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(235): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(236): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(237): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(238): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(239): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(240): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(243): warning C4047: '!=' : 'int' differs in levels of indirection from 'void *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(244): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(265): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(266): warning C4047: '=' : 'int' differs in levels of indirection from 'void *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(267): warning C4133: '=' : incompatible types - from 'pierscien *' to 'pierscien *'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(272): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(277): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(284): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>c:\users\karol\documents\visual studio 2013\projects\przetwarzanie\przetwarzanie\przetwarzanie.c(293): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(283) : see declaration of 'scanf'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\przetwarzanie\Debug\przetwarzanie.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\przetwarzanie\Debug\przetwarzanie.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\przetwarzanie\Debug\przetwarzanie.lib" /MACHINE:X86 Debug\przetwarzanie.obj
+         przetwarzanie.vcxproj -> C:\Users\Karol\Documents\Visual Studio 2013\Projects\przetwarzanie\Debug\przetwarzanie.exe
+     1>Done Building Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\przetwarzanie\przetwarzanie\przetwarzanie.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.01

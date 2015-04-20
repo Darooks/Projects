@@ -1,0 +1,11 @@
+﻿'sinus.exe' (Win32): Loaded 'C:\Users\Karol\Documents\Visual Studio 2013\Projects\sinus\Debug\sinus.exe'. Symbols loaded.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp120d.dll'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcr120d.dll'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\apphelp.dll'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cmd.exe'. Cannot find or open the PDB file.
+'sinus.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\cmd.exe'
+The thread 0x1728 has exited with code 0 (0x0).
+The program '[6924] sinus.exe' has exited with code 0 (0x0).

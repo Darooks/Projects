@@ -1,0 +1,6 @@
+c:\users\karol\documents\visual studio 2013\Projects\youtube\youtube\bin\Debug\youtube.exe.config
+c:\users\karol\documents\visual studio 2013\Projects\youtube\youtube\obj\Debug\youtube.csprojResolveAssemblyReference.cache
+c:\users\karol\documents\visual studio 2013\Projects\youtube\youtube\obj\Debug\youtube.Application.resources
+c:\users\karol\documents\visual studio 2013\Projects\youtube\youtube\obj\Debug\youtube.Properties.Resources.resources
+c:\users\karol\documents\visual studio 2013\Projects\youtube\youtube\obj\Debug\youtube.csproj.GenerateResource.Cache
+c:\users\karol\documents\visual studio 2013\Projects\youtube\youtube\obj\Debug\youtube.Form1.resources

@@ -1,0 +1,303 @@
+// AiSD 3 Hex
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+#define WYSOKOSC_PLANSZY 25
+#define SZEROKOSC_PLANSZY 66
+#define POLNOC -1
+#define POLUDNIE 1
+#define WSCHOD 1
+#define ZACHOD -1
+
+void wczytajMape(char plansza[WYSOKOSC_PLANSZY][SZEROKOSC_PLANSZY], int wysokosc, char zminimalizowanaPlansza[11][11])
+{
+	int k = 0, l = 0;
+
+	for (int i = 0; i < wysokosc / 2 + 1; i++)
+	{
+		int j;
+		for (j = 0; j < SZEROKOSC_PLANSZY; j++)
+		{
+			if (plansza[i][j] == NULL)
+				break;
+			if (plansza[i][j] == '<')
+			{
+				l = 0;
+				j += 2;
+				zminimalizowanaPlansza[k][l] = plansza[i][j];
+				l++;
+				int m = i;
+				while (true)
+				{
+					j += 3;
+					m++;
+					if (plansza[m][j - 1] == NULL)
+						break;
+
+					zminimalizowanaPlansza[k][l] = plansza[m][j];
+					l++;
+				}
+				zminimalizowanaPlansza[k][l] = NULL;
+				k++;
+				break;
+			}
+		}
+	}
+	zminimalizowanaPlansza[k][0] = NULL;
+}
+
+int BOARD_SIZE(char mapa[11][11])
+{
+	int i;
+	for (i = 0; i < 11; i++)
+	{
+		if (mapa[0][i] == NULL)
+			break;
+	}
+	return i;
+}
+
+int PAWNS_NUMBER(char mapa[11][11])
+{
+	int iloscPionkow = 0;
+	for (int i = 0; i < 11; i++)
+	{
+		for (int j = 0; j < 11; j++)
+		{
+			if (mapa[i][j] == 'b' || mapa[i][j] == 'r')
+				iloscPionkow++;
+		}
+	}
+	return iloscPionkow;
+}
+
+bool IS_BOARD_CORRECT(char mapa[11][11])
+{
+	int iloscPionkowNiebieskich = 0;
+	int iloscPionkowCzerwonych = 0;
+	for (int i = 0; i < 11; i++)
+	{
+		for (int j = 0; j < 11; j++)
+		{
+			if (mapa[i][j] == 'b')
+				iloscPionkowNiebieskich++;
+			if (mapa[i][j] == 'r')
+				iloscPionkowCzerwonych++;
+		}
+	}
+	if (iloscPionkowCzerwonych == iloscPionkowNiebieskich || iloscPionkowCzerwonych == iloscPionkowNiebieskich + 1)
+		return true;
+	else
+		return false;
+}
+
+bool czyPoprawnaPozycja(int x, int y, int rozmiar, bool **planszaSprawdzonych)
+{
+	if (x < 0 || x > rozmiar - 1 || y < 0 || y > rozmiar - 1)
+	{
+		return false;
+	}
+	if (planszaSprawdzonych[y][x])
+	{
+		return false;
+	}
+	return true;
+}
+
+bool czyWygrana(char mapa[11][11], char poszukiwany, int x, int y, bool **planszaSprawdzonych)
+{
+	if (!czyPoprawnaPozycja(x, y, BOARD_SIZE(mapa), planszaSprawdzonych))
+	{
+		return false;
+	}
+	planszaSprawdzonych[y][x] = true;
+
+	if ((planszaSprawdzonych[y][x] == 'r' && x == BOARD_SIZE(mapa) - 1) || (planszaSprawdzonych[y][x] == 'b' && y == BOARD_SIZE(mapa) - 1))
+	{
+		return true;
+	}
+
+	if (planszaSprawdzonych[y][x] == poszukiwany)
+	{
+		if (czyWygrana(mapa, poszukiwany, x + ZACHOD, y + POLNOC, planszaSprawdzonych))
+		{
+			return true;
+		}
+		if (czyWygrana(mapa, poszukiwany, x + ZACHOD, y, planszaSprawdzonych))
+		{
+			return true;
+		}
+		if (czyWygrana(mapa, poszukiwany, x, y + POLNOC, planszaSprawdzonych))
+		{
+			return true;
+		}
+		if (czyWygrana(mapa, poszukiwany, x, y + POLUDNIE, planszaSprawdzonych))
+		{
+			return true;
+		}
+		if (czyWygrana(mapa, poszukiwany, x + WSCHOD, y, planszaSprawdzonych))
+		{
+			return true;
+		}
+		if (czyWygrana(mapa, poszukiwany, x + WSCHOD, y + POLUDNIE, planszaSprawdzonych))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+int IS_GAME_OVER(char mapa[11][11])
+{
+	if (IS_BOARD_CORRECT(mapa) == false)
+		return 0;
+
+	int rozmiar = BOARD_SIZE(mapa);
+	bool **planszaSprawdzonych = new bool*[rozmiar];
+	for (int i = 0; i < rozmiar; i++)
+	{
+		planszaSprawdzonych[i] = new bool[rozmiar];
+	}
+
+	//SPRAWDZAM BOKI CZERWONEGO GRACZA
+	for (int i = 0; i < rozmiar; i++)
+	{
+		for (int y = 0; y < rozmiar; y++)
+		{
+			for (int x = 0; x < rozmiar; x++)
+			{
+				planszaSprawdzonych[y][x] = false;
+			}
+		}
+		if (mapa[i][0] == 'r')
+		{
+			if (czyWygrana(mapa, 'r', i, 0, planszaSprawdzonych))
+			{
+				return 1;
+			}
+		}
+	}
+
+
+	//SPRAWDZAM BOKI NIEBIESKIEGO GRACZA
+	for (int i = 0; i < rozmiar; i++)
+	{
+		for (int y = 0; y < rozmiar; y++)
+		{
+			for (int x = 0; x < rozmiar; x++)
+			{
+				planszaSprawdzonych[y][x] = false;
+			}
+		}
+		if (mapa[0][i] == 'b')
+		{
+			if (czyWygrana(mapa, 'b', 0, i, planszaSprawdzonych))
+			{
+				return 2;
+			}
+		}
+	}
+
+	return 0;
+}
+
+int main()
+{
+	ifstream in("wejscie.txt");
+	streambuf *cinbuf = std::cin.rdbuf();
+	cin.rdbuf(in.rdbuf());
+
+	char plansza[WYSOKOSC_PLANSZY][SZEROKOSC_PLANSZY];
+	char linia[SZEROKOSC_PLANSZY];
+	int dlugoscLinii;
+	char mapa[11][11];
+	int wysokosc = 0;
+
+	bool czyWczytywacMape = true;
+	while (cin.getline(linia, SZEROKOSC_PLANSZY))
+	{
+		dlugoscLinii = strlen(linia);
+		// WCZYTUJE POLECENIA
+		if (linia[0] >= 'A' && linia[0] <= 'Z')
+		{
+			wczytajMape(plansza, wysokosc, mapa);
+
+			czyWczytywacMape = false;
+			wysokosc = 0;
+
+			// BOARD_SIZE
+			if (!strcmp(linia, "BOARD_SIZE"))
+			{
+				cout << BOARD_SIZE(mapa) << endl;
+			}
+
+			// PAWNS_NUMBER
+			else if (!strcmp(linia, "PAWNS_NUMBER"))
+			{
+				cout << PAWNS_NUMBER(mapa) << endl;
+			}
+
+			// IS_BOARD_CORRECT
+			else if (!strcmp(linia, "IS_BOARD_CORRECT"))
+			{
+				if (IS_BOARD_CORRECT(mapa))
+					cout << "YES" << endl;
+				else
+					cout << "NO" << endl;
+			}
+			// IS_GAME_OVER
+			else if (!strcmp(linia, "IS_GAME_OVER"))
+			{
+				fstream plik;
+				plik.open("wyjscie.txt", ios::app);
+				if (!IS_BOARD_CORRECT(mapa))
+				{
+					cout << "NO" << endl;
+					plik << "NO" << endl;
+				}
+				else
+				{
+					int wynik = IS_GAME_OVER(mapa);
+					if (wynik == 0)
+					{
+						cout << "NO" << endl;
+						plik << "NO" << endl;
+					}
+					else if (wynik == 1)
+					{
+						cout << "YES RED" << endl;
+						plik << "YES RED" << endl;
+					}
+					else if (wynik == 2)
+					{
+						cout << "YES BLUE" << endl;
+						plik << "YES BLUE" << endl;
+					}
+				}
+				plik << endl;
+				plik.close();
+			}
+		}
+		else // nowa mapa do wczytania
+		{
+			if (linia[dlugoscLinii - 1] == '-' && linia[dlugoscLinii - 2] == '-' && linia[dlugoscLinii - 3] == '-')
+			{
+				czyWczytywacMape = true;
+			}
+		}
+
+		// WCZYTUJE MAPE
+		if (czyWczytywacMape)
+		{
+			int i;
+			for (i = 0; i < dlugoscLinii; i++)
+				plansza[wysokosc][i] = linia[i];
+			plansza[wysokosc][i] = NULL;
+			wysokosc++;
+		}
+	}
+	return 0;
+}

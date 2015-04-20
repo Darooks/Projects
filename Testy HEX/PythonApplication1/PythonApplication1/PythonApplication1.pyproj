@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f98345e5-31e5-4689-8d4e-8749276881f6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="class1.py" />
+    <Compile Include="Guarana.py" />
+    <Compile Include="Jagoda.py" />
+    <Compile Include="Krowa.py" />
+    <Compile Include="Lew.py" />
+    <Compile Include="Lis.py" />
+    <Compile Include="Organizm.py" />
+    <Compile Include="Main.py" />
+    <Compile Include="Owca.py" />
+    <Compile Include="Roslina.py" />
+    <Compile Include="Swiat.py" />
+    <Compile Include="Trawa.py" />
+    <Compile Include="Wilk.py" />
+    <Compile Include="Zwierze.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

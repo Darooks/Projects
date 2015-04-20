@@ -1,0 +1,7 @@
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\bin\Debug\firstOne.exe.config
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\obj\Debug\firstOne.csprojResolveAssemblyReference.cache
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\bin\Debug\firstOne.exe
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\bin\Debug\firstOne.pdb
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\obj\Debug\firstOne.exe
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\obj\Debug\firstOne.pdb
+c:\users\karol\documents\visual studio 2013\Projects\firstOne\firstOne\bin\Debug\RozszerzenieLib.dll

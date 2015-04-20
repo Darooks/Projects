@@ -1,0 +1,15 @@
+﻿Build started 2015-01-12 20:46:04.
+     1>Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.2\asembler 2.2\asembler 2.2.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling zad41.asm...
+         cmd.exe /C "C:\Users\Karol\AppData\Local\Temp\tmp99aaac2892104e54a4da918ee939f196.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\zad41.obj" /W3 /errorReport:prompt  /Tazad41.asm
+     1>zad41.asm(127): warning A4023: with /coff switch, leading underscore required for start address : zacznij
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.2\Debug\asembler 2.2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.2\Debug\asembler 2.2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.2\Debug\asembler 2.2.lib" /MACHINE:X86 libcmt.lib Debug\zad41.obj
+     1>zad41.obj : fatal error LNK1190: invalid fixup found, type 0x0001
+     1>Done Building Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.2\asembler 2.2\asembler 2.2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.68

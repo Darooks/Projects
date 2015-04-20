@@ -1,0 +1,11 @@
+﻿Build started 2015-03-29 17:58:00.
+     1>Project "c:\Users\Karol\documents\visual studio 2013\Projects\Project4\Project4\Project4.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\karol\documents\visual studio 2013\Projects\Project4\Debug\Project4.exe" /INCREMENTAL /NOLOGO SDL2.lib SDL2main.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\karol\documents\visual studio 2013\Projects\Project4\Debug\Project4.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\karol\documents\visual studio 2013\Projects\Project4\Debug\Project4.lib" /MACHINE:X86 Debug\Source.obj
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' conflicts with use of other libs; use /NODEFAULTLIB:library
+         Project4.vcxproj -> c:\users\karol\documents\visual studio 2013\Projects\Project4\Debug\Project4.exe
+     1>Done Building Project "c:\Users\Karol\documents\visual studio 2013\Projects\Project4\Project4\Project4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.60

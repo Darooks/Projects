@@ -1,0 +1,17 @@
+﻿Build started 2015-02-17 20:32:42.
+     1>Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.5\asembler 2.5\asembler 2.5.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling 2.5.asm...
+         cmd.exe /C "C:\Users\Karol\AppData\Local\Temp\tmpf0245d4341b74c199fc8348075bc2ada.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\2.5.obj" /W3 /errorReport:prompt  /Ta2.5.asm
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.5\Debug\asembler 2.5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.5\Debug\asembler 2.5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.5\Debug\asembler 2.5.lib" /MACHINE:X86 Debug\Source.obj
+         Debug\2.5.obj
+     1>2.5.obj : error LNK2005: _srednia_harm already defined in Source.obj
+     1>LINK : error LNK2001: unresolved external symbol _mainCRTStartup
+     1>C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.5\Debug\asembler 2.5.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.5\asembler 2.5\asembler 2.5.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.43

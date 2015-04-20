@@ -1,0 +1,39 @@
+﻿Build started 2015-03-15 18:36:24.
+     1>Project "c:\Users\Karol\documents\visual studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\ConsoleApplication9.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D CONSOLEAPPLICATION9_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(15): error C2061: syntax error : identifier 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(16): error C2146: syntax error : missing ';' before identifier 'usun'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(16): error C2061: syntax error : identifier 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(16): warning C4183: 'usun': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(17): error C2061: syntax error : identifier 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(19): error C2146: syntax error : missing ';' before identifier 'insert'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(19): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(19): error C2061: syntax error : identifier 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(19): warning C4183: 'insert': missing return type; assumed to be a member function returning 'int'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(5): warning C4273: 'DllClass::DllClass' : inconsistent dll linkage
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(13) : see previous definition of '{ctor}'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(10): warning C4273: 'DllClass::~DllClass' : inconsistent dll linkage
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\header.h(14) : see previous definition of '{dtor}'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(19): error C2371: 'lista' : redefinition; different basic types
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(17) : see declaration of 'lista'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(29): error C2371: 'pierscien' : redefinition; different basic types
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(26) : see declaration of 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(34): error C2027: use of undefined type 'lista'
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(17) : see declaration of 'lista'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(34): error C2440: 'initializing' : cannot convert from 'void *' to 'lista *'
+                 Conversion from 'void*' to pointer to non-'void' requires an explicit cast
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(35): error C2027: use of undefined type 'pierscien'
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(26) : see declaration of 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(35): error C2227: left of '->next' must point to class/struct/union/generic type
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(37): error C2027: use of undefined type 'pierscien'
+                 c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(26) : see declaration of 'pierscien'
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(37): error C2227: left of '->wsk' must point to class/struct/union/generic type
+     1>c:\users\karol\documents\visual studio 2013\projects\consoleapplication9\consoleapplication9\dllmain.cpp(37): fatal error C1903: unable to recover from previous error(s); stopping compilation
+     1>Done Building Project "c:\Users\Karol\documents\visual studio 2013\Projects\ConsoleApplication9\ConsoleApplication9\ConsoleApplication9.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.71

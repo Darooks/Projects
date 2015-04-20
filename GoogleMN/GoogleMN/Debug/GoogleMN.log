@@ -1,0 +1,17 @@
+﻿Build started 2015-04-15 13:33:25.
+     1>Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\GoogleMN\GoogleMN\GoogleMN.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GoogleMN.cpp
+         GoogleMN.cpp
+     1>c:\users\karol\documents\visual studio 2013\projects\googlemn\googlemn\googlemn.cpp(286): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\karol\documents\visual studio 2013\projects\googlemn\googlemn\googlemn.cpp(291): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\karol\documents\visual studio 2013\projects\googlemn\googlemn\googlemn.cpp(326): warning C4551: function call missing argument list
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\GoogleMN\Debug\GoogleMN.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\GoogleMN\Debug\GoogleMN.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Karol\Documents\Visual Studio 2013\Projects\GoogleMN\Debug\GoogleMN.lib" /MACHINE:X86 Debug\GoogleMN.obj
+         Debug\stdafx.obj
+         GoogleMN.vcxproj -> C:\Users\Karol\Documents\Visual Studio 2013\Projects\GoogleMN\Debug\GoogleMN.exe
+     1>Done Building Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\GoogleMN\GoogleMN\GoogleMN.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.36

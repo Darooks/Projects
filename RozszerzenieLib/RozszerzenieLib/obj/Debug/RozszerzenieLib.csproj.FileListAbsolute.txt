@@ -1,0 +1,4 @@
+c:\users\karol\documents\visual studio 2013\Projects\RozszerzenieLib\RozszerzenieLib\bin\Debug\RozszerzenieLib.dll
+c:\users\karol\documents\visual studio 2013\Projects\RozszerzenieLib\RozszerzenieLib\bin\Debug\RozszerzenieLib.pdb
+c:\users\karol\documents\visual studio 2013\Projects\RozszerzenieLib\RozszerzenieLib\obj\Debug\RozszerzenieLib.dll
+c:\users\karol\documents\visual studio 2013\Projects\RozszerzenieLib\RozszerzenieLib\obj\Debug\RozszerzenieLib.pdb

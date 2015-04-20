@@ -1,0 +1,13 @@
+﻿Build started 2014-10-21 01:05:14.
+     1>Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.7\asembler 2.7\asembler 2.7.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling Source.asm...
+         cmd.exe /C "C:\Users\Karol\AppData\Local\Temp\tmp31ec0863fc914aa587fdd9a30845793a.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\Source.obj" /W3 /errorReport:prompt  /TaSource.asm
+     1>Source.asm(46): error A2096: segment, group, or segment register expected
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\BuildCustomizations\masm.targets(50,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\Source.obj" /W3 /errorReport:prompt  /TaSource.asm" exited with code 1.
+     1>Done Building Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\asembler 2.7\asembler 2.7\asembler 2.7.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.42

@@ -1,0 +1,32 @@
+﻿Build started 2014-10-29 23:39:28.
+     1>Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\grafika_2\grafika_2\grafika_2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt grafika_2.cpp
+         grafika_2.cpp
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(41): error C2440: '=' : cannot convert from 'const char [5]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(42): error C2440: '=' : cannot convert from 'char [11]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(52): error C2664: 'HWND CreateWindowExW(DWORD,LPCWSTR,LPCWSTR,DWORD,int,int,int,int,HWND,HMENU,HINSTANCE,LPVOID)' : cannot convert argument 2 from 'char [11]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(86): error C2664: 'BOOL AppendMenuW(HMENU,UINT,UINT_PTR,LPCWSTR)' : cannot convert argument 4 from 'const char [13]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(87): error C2664: 'BOOL AppendMenuW(HMENU,UINT,UINT_PTR,LPCWSTR)' : cannot convert argument 4 from 'const char [1]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(88): error C2664: 'BOOL AppendMenuW(HMENU,UINT,UINT_PTR,LPCWSTR)' : cannot convert argument 4 from 'const char [8]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(90): error C2664: 'BOOL AppendMenuW(HMENU,UINT,UINT_PTR,LPCWSTR)' : cannot convert argument 4 from 'const char [10]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(92): error C2664: 'BOOL AppendMenuW(HMENU,UINT,UINT_PTR,LPCWSTR)' : cannot convert argument 4 from 'const char [6]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(93): error C2664: 'BOOL AppendMenuW(HMENU,UINT,UINT_PTR,LPCWSTR)' : cannot convert argument 4 from 'const char [12]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(100): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)' : cannot convert argument 2 from 'const char [12]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>c:\users\karol\documents\visual studio 2013\projects\grafika_2\grafika_2\grafika_2.cpp(105): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)' : cannot convert argument 2 from 'const char [33]' to 'LPCWSTR'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>Done Building Project "C:\Users\Karol\Documents\Visual Studio 2013\Projects\grafika_2\grafika_2\grafika_2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.95
