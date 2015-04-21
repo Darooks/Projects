@@ -42,7 +42,7 @@ void bisekcja(double a, double b, int it_end, double eps)
 
 }
 
-void styczne(int x0, int x1, double eps)
+void styczne(double x0, double x1, double eps)
 {
 
 }
