@@ -2,7 +2,7 @@
 #include <math.h>
 using namespace std;
 
-#define przedzial 1
+#define przedzial 0.1
 double eps = 0.000001;
 
 double fun0(double x)
@@ -16,7 +16,7 @@ double fun0(double x)
 double fun0_d(double x) // x(3x + 8)
 {										// (x*cos(x) - sin(x)) / x^2
 	//double wynik = x*((3 * x) + 8);
-	double wynik = ((x*cos(x)) - sin(x)) / x *x;
+	double wynik = ((x*cos(x)) - sin(x)) / (x * x);
 	return wynik;
 }
 
@@ -25,10 +25,37 @@ double fun1(double x)
 	return (x - 1)*(x - 2)*(x - 3)*(x - 4);
 }
 
+double fun2(double x)
+{
+	return tan(x);
+}
+double fun2_d(double x)
+{
+	return 1 + tan(x) * tan(x);
+}
+
+double fun3(double x)
+{
+	return (x - 1)*(x - 2)*(x - 3)*(x - 4);
+}
+double fun3_d(double x)
+{
+	return 4 * x * x * x - 30 * x * x + 70 * x - 50;
+}
+
+double fun4(double x)
+{
+	return (x - 0.01)*(x - 0.02)*(x - 0.03)*(x - 0.04);
+}
+double fun4_d(double x)
+{
+	return (80000 * x * x * x - 6000 * x * x + 140 * x - 1) / 20000;
+}
+
 void bisekcja(double a, double b, int it_end)
 {
 	double c;
-	double x;
+	double x = 0;
 	int ilosc_x = 5;
 	double temp_a = a;
 	double temp_b = b;
@@ -36,21 +63,26 @@ void bisekcja(double a, double b, int it_end)
 	int licznik = 0;
 	
 	b = a + przedzial;
-	while (true)
+	while (fabs(a - b) > eps)
 	{
+
 		if (a >= temp_b || b > temp_b)
 			break;
 		for (int i = 0; i < it_end; i++)
 		{
 			c = a + ((b - a) / 2);
 			x = c;
-
-			if (fun0(a)*fun0(x) < 0)
+			/*if (abs(fun0((a + b) / 2)) < eps)
+			{
+				jest_x = false;
+				break;
+			}*/
+			if (fun4(a)*fun4(x) < 0)
 			{
 				b = x;
 				jest_x = true;
 			}
-			else if (fun0(b)*fun0(x) < 0)
+			else if (fun4(b)*fun4(x) <= 0)
 			{
 				a = x;
 				jest_x = true;
@@ -61,26 +93,27 @@ void bisekcja(double a, double b, int it_end)
 		licznik++;
 		if (jest_x == true)
 		{
-			cout << "x" << " = " << x << endl;
+			cout << "x = " << x << endl;
 			cout << endl;
 		}
 		
 		a = temp_a + (przedzial*(double)licznik);
 		b = a + przedzial;
+		
 	}
-
 }
 
-void stycznych(double x, int iter)
+void stycznych(double x)
 {
+	int iter = 0;
 	double x_n, y, dy;
 	int iter_max = 200;
 	x_n = x - 1;
-	y = fun0(x);
+	y = fun3(x);
 	while (abs(x_n - x) > eps && abs(y) > eps)
 	{
 		//dy = (fun(x + eps) - y) / eps;
-		dy = fun0_d(x);
+		dy = fun3_d(x);
 
 		if (abs(dy) < eps || iter++ >= iter_max)
 		{
@@ -90,8 +123,9 @@ void stycznych(double x, int iter)
 
 		x_n = x;
 		x = x - y / dy;
-		y = fun0(x);
+		y = fun3(x);
 	}
+
 	cout << x << endl;
 	//cout << dy << endl;
 	return;
@@ -99,14 +133,15 @@ void stycznych(double x, int iter)
 
 int main()
 {
-	double a = 2.0;
-	double b = 10.0;
+	double a = 0.0;
+	double b = 13.0;
 	//double eps = 0.0005;
 	int iter = 20;
+	
 
-	//bisekcja(a, b, iter, eps);
-	for (int i = 1; i <= 10; i++)
-		stycznych(i, 0);
+	//bisekcja(a, b, iter);
+	for (int i = 1; i <= 20; i++)
+		stycznych(0);
 
 	system("pause");
 	return 0;
