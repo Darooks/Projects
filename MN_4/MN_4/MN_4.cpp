@@ -52,6 +52,16 @@ double fun4_d(double x)
 	return (80000 * x * x * x - 6000 * x * x + 140 * x - 1) / 20000;
 }
 
+double fun5(double x)
+{
+	return x*x*x*x;
+}
+
+double fun5_d(double x)
+{
+	return 4 * (x*x*x);
+}
+
 void bisekcja(double a, double b, int it_end)
 {
 	double c;
@@ -77,12 +87,12 @@ void bisekcja(double a, double b, int it_end)
 				jest_x = false;
 				break;
 			}*/
-			if (fun4(a)*fun4(x) < 0)
+			if (fun5(a)*fun5(x) < 0)
 			{
 				b = x;
 				jest_x = true;
 			}
-			else if (fun4(b)*fun4(x) <= 0)
+			else if (fun5(b)*fun5(x) <= 0)
 			{
 				a = x;
 				jest_x = true;
@@ -109,11 +119,11 @@ void stycznych(double x)
 	double x_n, y, dy;
 	int iter_max = 200;
 	x_n = x - 1;
-	y = fun3(x);
+	y = fun5(x);
 	while (abs(x_n - x) > eps && abs(y) > eps)
 	{
 		//dy = (fun(x + eps) - y) / eps;
-		dy = fun3_d(x);
+		dy = fun5_d(x);
 
 		if (abs(dy) < eps || iter++ >= iter_max)
 		{
@@ -123,7 +133,7 @@ void stycznych(double x)
 
 		x_n = x;
 		x = x - y / dy;
-		y = fun3(x);
+		y = fun5(x);
 	}
 
 	cout << x << endl;
@@ -139,10 +149,10 @@ int main()
 	int iter = 20;
 	
 
-	//bisekcja(a, b, iter);
-	for (int i = 1; i <= 20; i++)
-		stycznych(0);
-
+	bisekcja(a, b, iter);
+	/*for (double i = -1.0; i <= 1.0; i += 0.1)
+		stycznych(i);
+*/
 	system("pause");
 	return 0;
 }
